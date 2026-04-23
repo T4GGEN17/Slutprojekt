@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css-files/style.css">
+    <script src="../javascript/JavaScript.js"></script>
     <title>Fysik.com</title>
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="formler.html">Formler</a></li>
+            <li><a href="frågor.html">Frågor</a></li>
+            <li><a href="fysiker.html">Kända Fysiker</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Övningsfrågor</h1>
+        <p>Testa dina kunskaper i fysik</p>
+    </header>
+    <main>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Vad är formeln för hastighet?</p>
+                <label><input type="radio" name="q1" value="a"> v = s/t</label><br>
+                <label><input type="radio" name="q1" value="b"> F = m·a</label><br>
+                <label><input type="radio" name="q1" value="c"> E = m·g·h</label>
+            </div>
+            <div class="question">
+                <p>2. Vad är tyngdkraftens formel?</p>
+                <label><input type="radio" name="q2" value="a"> p = F/A</label><br>
+                <label><input type="radio" name="q2" value="b"> F = m·g</label><br>
+                <label><input type="radio" name="q2" value="c"> v = s/t</label>
+            </div>
+            <div class="question">
+                <p>3. Vad är rörelseenergi?</p>
+                <label><input type="radio" name="q3" value="a"> Eₖ = ½·m·v²</label><br>
+                <label><input type="radio" name="q3" value="b"> ρ = m/V</label><br>
+                <label><input type="radio" name="q3" value="c"> P = E/t</label>
+            </div>
+            <button type="button" onclick="rättaQuiz()">Rätta</button>
+        </form>
+        <h2 id="resultat"></h2>
+    </main>
+    <footer>
+        <p>© 2026 Fysik.com</p>
+    </footer>
 </body>
 </html>
