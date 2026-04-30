@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css-files/style.css">
-    <script src="../javascript/JavaScript.js"></script>
+    <script src="../javascript-files/JavaScript.js"></script>
     <title>Fysik.com</title>
 </head>
 
 <body>
+    <!--Navigator-->
     <nav>
         <ul>
             <li><a href="index.html">Hem</a></li>
@@ -21,26 +22,31 @@
         <h1>Övningsfrågor</h1>
         <p>Testa dina kunskaper i fysik</p>
     </header>
+    <!--Frågor-->
     <main>
         <form id="quizForm">
             <div class="question">
+                <!--Fråga 1-->
                 <p><strong>1. Vad är formeln för hastighet?</strong></p>
                 <label><input type="radio" name="q1" value="a"> v = s/t</label><br>
                 <label><input type="radio" name="q1" value="b"> F = m·a</label><br>
                 <label><input type="radio" name="q1" value="c"> E = m·g·h</label>
             </div>
             <div class="question">
+                <!--Fråga 2-->
                 <p><strong> Vad är tyngdkraftens formel?</strong></p>
                 <label><input type="radio" name="q2" value="a"> p = F/A</label><br>
                 <label><input type="radio" name="q2" value="b"> F = m·g</label><br>
                 <label><input type="radio" name="q2" value="c"> v = s/t</label>
             </div>
             <div class="question">
+                <!--Fråga 3-->
                 <p><strong> Vad är rörelseenergi?</strong></p>
                 <label><input type="radio" name="q3" value="a"> Eₖ = ½·m·v²</label><br>
                 <label><input type="radio" name="q3" value="b"> ρ = m/V</label><br>
                 <label><input type="radio" name="q3" value="c"> P = E/t</label>
             </div>
+            <!--Knapp för att rätta-->
             <button type="button" onclick="rättaQuiz()">Rätta</button>
         </form>
         <h2 id="resultat"></h2>
