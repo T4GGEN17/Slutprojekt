@@ -19,6 +19,17 @@ function rättaQuiz() {
     }
 
     // Visar resultatet på sidan
-    document.getElementById("resultat").innerHTML =
-        "Du fick " + poäng + " av 3 rätt!";
+    let resultat = document.getElementById("resultat");
+
+    if (poäng === 3) {
+        resultat.innerHTML = "Du fick 3 av 3 rätt! <br> Snyggt gjort!";
+    }
+
+    else if (poäng === 2) {
+        resultat.innerHTML = "Du fick 2 av 3 rätt! <br> Du kan göra bättre.";
+    }
+
+    else {
+        resultat.innerHTML = "Du fick " + poäng + " av 3 rätt! <br> ÖVA MER!";
+    }
 }
