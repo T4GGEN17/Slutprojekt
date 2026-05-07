@@ -24,5 +24,8 @@ Syftet med sidan är att hjälpa användare att lära sig grunderna inom fysik p
 - style.css
 - JavaScript.js
 
+## Bild på webbsidan i olika webbläsare
+![alt text](bilder/manuellt_test.png)
+
 ## Skapad av 
 Tage Lundberg

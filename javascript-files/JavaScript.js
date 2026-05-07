@@ -18,18 +18,19 @@ function rättaQuiz() {
         poäng++;
     }
 
-    // Visar resultatet på sidan
+    // Visar resultatet på sidan med olika svar beroende på poängen man får
     let resultat = document.getElementById("resultat");
 
     if (poäng === 3) {
         resultat.innerHTML = "Du fick 3 av 3 rätt! <br> Snyggt gjort!";
     }
-
     else if (poäng === 2) {
         resultat.innerHTML = "Du fick 2 av 3 rätt! <br> Du kan göra bättre.";
     }
-
-    else {
-        resultat.innerHTML = "Du fick " + poäng + " av 3 rätt! <br> ÖVA MER!";
+    else if (poäng===1){
+        resultat.innerHTML = "Du fick 1 av 3 rätt! <br> ÖVA MER!";
+    }
+    else{
+        resultat.innerHTML = "Du fick 0 av 3 rätt! <br> GE UPP!!!";
     }
 }
