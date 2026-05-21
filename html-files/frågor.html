@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,8 @@
         <p>Testa dina kunskaper i fysik</p>
     </header>
     <!--Frågor-->
+    <!--Vissa symboler är AI generarede i formlerna så att formlerna ser bättre ut som tex ·, ½, Eₖ och ρ. 
+    Jag kollade med dig om det här i förväg då du sa att det var okej. Det finns olika fysikformler här-->
     <main>
         <form id="quizForm">
             <div class="question">
@@ -51,6 +53,17 @@
         </form>
         <h2 id="resultat"></h2>
         <img src="../bilder/einstein.jpg" alt=".einstein ">
+        <h2>Vad är fysik?</h2>
+        <p>Fysik handlar om hur världen fungerar.</p>
+    </section>
+    <section>
+        <h2>Skydd mot XSS</h2>
+        <form id="formulär">
+            <input type="text" id="text">
+            <button type="submit">Skicka</button>
+        </form>
+        <p id="xssResultat"></p>
+    </section>
     </main>
     <footer>
         <p>© 2026 Fysik.com</p>
