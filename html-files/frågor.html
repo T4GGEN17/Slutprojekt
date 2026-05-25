@@ -1,74 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css-files/style.css">
-    <script src="../javascript-files/JavaScript.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css-files/style.css" />
     <title>Fysik.com</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Navigator-->
     <nav>
-        <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="formler.html">Formler</a></li>
-            <li><a href="frågor.html">Frågor</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="formler.html">Formler</a></li>
+        <li><a href="frågor.html">Frågor</a></li>
+      </ul>
     </nav>
     <header>
-        <h1>Övningsfrågor</h1>
-        <p>Testa dina kunskaper i fysik</p>
+      <h1>Övningsfrågor</h1>
+      <p>Testa dina kunskaper i fysik</p>
     </header>
     <!--Frågor-->
     <!--Vissa symboler är AI generarede i formlerna så att formlerna ser bättre ut som tex ·, ½, Eₖ och ρ. 
     Jag kollade med dig om det här i förväg då du sa att det var okej. Det finns olika fysikformler här-->
     <main>
-        <form id="quizForm">
-            <div class="question">
-                <!--Fråga 1-->
-                <p><strong>1. Vad är formeln för hastighet?</strong></p>
-                <label><input type="radio" name="q1" value="a"> v = s/t</label><br>
-                <label><input type="radio" name="q1" value="b"> F = m·a</label><br>
-                <label><input type="radio" name="q1" value="c"> E = m·g·h</label>
-            </div>
-            <div class="question">
-                <!--Fråga 2-->
-                <p><strong> Vad är tyngdkraftens formel?</strong></p>
-                <label><input type="radio" name="q2" value="a"> p = F/A</label><br>
-                <label><input type="radio" name="q2" value="b"> F = m·g</label><br>
-                <label><input type="radio" name="q2" value="c"> v = s/t</label>
-            </div>
-            <div class="question">
-                <!--Fråga 3-->
-                <p><strong> Vad är rörelseenergi?</strong></p>
-                <label><input type="radio" name="q3" value="a"> Eₖ = ½·m·v²</label><br>
-                <label><input type="radio" name="q3" value="b"> ρ = m/V</label><br>
-                <label><input type="radio" name="q3" value="c"> P = E/t</label>
-            </div>
-            <!--Knapp för att rätta-->
-            <button type="button" onclick="rättaQuiz()">Rätta</button>
+      <form id="quizForm">
+        <div class="question">
+          <!--Fråga 1-->
+          <p><strong>1. Vad är formeln för hastighet?</strong></p>
+          <label><input type="radio" name="q1" value="a" /> v = s/t</label
+          ><br />
+          <label><input type="radio" name="q1" value="b" /> F = m·a</label
+          ><br />
+          <label><input type="radio" name="q1" value="c" /> E = m·g·h</label>
+        </div>
+        <div class="question">
+          <!--Fråga 2-->
+          <p><strong> Vad är tyngdkraftens formel?</strong></p>
+          <label><input type="radio" name="q2" value="a" /> p = F/A</label
+          ><br />
+          <label><input type="radio" name="q2" value="b" /> F = m·g</label
+          ><br />
+          <label><input type="radio" name="q2" value="c" /> v = s/t</label>
+        </div>
+        <div class="question">
+          <!--Fråga 3-->
+          <p><strong> Vad är rörelseenergi?</strong></p>
+          <label><input type="radio" name="q3" value="a" /> Eₖ = ½·m·v²</label
+          ><br />
+          <label><input type="radio" name="q3" value="b" /> ρ = m/V</label
+          ><br />
+          <label><input type="radio" name="q3" value="c" /> P = E/t</label>
+        </div>
+        <!--Knapp för att rätta-->
+        <button type="button" onclick="rättaQuiz()">Rätta</button>
+      </form>
+      <h2 id="resultat"></h2>
+      <img src="../bilder/einstein.jpg" alt="Einstein" class="einstein" />
+      <h2>Vad är fysik?</h2>
+      <p>Fysik handlar om hur världen fungerar.</p>
+      <section>
+        <h2>Skydd mot XSS</h2>
+        <form id="formulär">
+          <input type="text" id="text" />
+          <button type="submit">Skicka</button>
         </form>
-        <h2 id="resultat"></h2>
-        <img src="../bilder/einstein.jpg" alt=".einstein ">
-        <h2>Vad är fysik?</h2>
-        <p>Fysik handlar om hur världen fungerar.</p>
-        </section>
-        <section>
-            <h2>Skydd mot XSS</h2>
-            <form id="formulär">
-                <input type="text" id="text">
-                <button type="submit">Skicka</button>
-            </form>
-            <p id="xssResultat"></p>
-        </section>
+        <p id="xssResultat"></p>
+      </section>
     </main>
     <footer>
-        <p>© 2026 Fysik.com</p>
+      <p>© 2026 Fysik.com</p>
     </footer>
-    <script src="../js-files/script.js"></script>
-</body>
-
+    <script src="../javascript-files/JavaScript.js"></script>
+  </body>
 </html>
