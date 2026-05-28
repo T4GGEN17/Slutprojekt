@@ -42,6 +42,6 @@ if (formulär) {
   formulär.addEventListener("submit", function (event) {
     event.preventDefault();
     let säkerText = filterInput(document.getElementById("text").value);
-    document.getElementById("xssResultat").innerHTML = "Du skrev: " + säkerText;
+    document.getElementById("xssResultat").textContent = "Du skrev: " + säkerText;
   });
 }
